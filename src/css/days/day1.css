@@ -68,7 +68,6 @@ p {
 .zero {
     max-width: 100px;
     box-sizing: border-box;
-    /* display: inline-block; */
     padding: 25px;
     border: 25px white solid;
     border-radius: 50%;

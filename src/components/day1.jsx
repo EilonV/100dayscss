@@ -4,10 +4,10 @@ export const Day1 = () => {
             <div className="day1">
                 <div className="content">
                     <div className="hundie">
-                        <div className="one-body" />
-                        <div className="one-head" />
-                        <div className="zero" />
-                        <div className="zero last" />
+                        <div className="one-body"></div>
+                        <div className="one-head"></div>
+                        <div className="zero"></div>
+                        <div className="zero last"></div>
                     </div>
                     <p className="large-text">DAYS</p>
                     <p className="small-text">CSS CHALLENGE</p>
