@@ -1,7 +1,23 @@
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation } from 'swiper/modules';
 import { Day1 } from "../components/day1"
+import { Day2 } from "../components/day2";
 
 export const Home = () => {
-    return <section>
-        <Day1 />
+    return <section className="home">
+        <Swiper
+            pagination={{
+                type: 'fraction',
+            }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className="mySwiper"
+        >
+            <SwiperSlide><Day1 /></SwiperSlide>
+            <SwiperSlide><Day2 /></SwiperSlide>
+        </Swiper>
     </section>
 }

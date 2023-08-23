@@ -1,3 +1,7 @@
 @import './base.css';
+@import './days/home.css';
 
-@import './days/day1.css'
+
+/* DAYS */
+@import './days/day1.css';
+@import './days/day2.css';
