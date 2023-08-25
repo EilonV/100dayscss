@@ -1,0 +1,125 @@
+.day3 {
+    background-color: #272C34;
+    transition: 0.2s;
+}
+
+.day3-circle {
+    height: 180px;
+    width: 180px;
+    opacity: 0;
+    background-color: #7DDFFC;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    animation: fade 4s infinite ease-in-out;
+}
+
+.day3-sun {
+    position: absolute;
+    transform: rotate(-100deg);
+    left: 80px;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transform-origin: 50% 400%;
+    background-color: #FFEF00;
+    animation: sun 4s infinite ease-in-out;
+}
+
+.day3-pyramid-right {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 56px;
+    right: 33px;
+    background-color: #DDDADA;
+    clip-path: polygon(0 0, 30% 100%, 100% 100%);
+    animation: brighten 4s infinite ease-in-out;
+}
+
+.day3-pyramid-left {
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    bottom: 56px;
+    left: 32px;
+    background-color: #F4F4F4;
+    clip-path: polygon(82% 0, 0% 100%, 100% 100%);
+    animation: darken 4s infinite ease-in-out;
+}
+
+.day3-shadow {
+    width: 240px;
+    height: 60px;
+    bottom: -4px;
+    right: -85px;
+    /* transform: translateX(50%); */
+    z-index: 5;
+    clip-path: polygon(100% 10%, 3% 0, 50% 0);
+    background-color: rgba(0, 0, 0, 0.237);
+    position: absolute;
+    animation: shadow 4s infinite linear;
+}
+
+.day3-sand {
+    height: 56px;
+    width: 100%;
+    background-color: #F0DE75;
+    position: absolute;
+    bottom: 0;
+}
+
+
+@keyframes fade {
+    20% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes sun {
+    30% {
+        transform: rotate(-50deg)
+    }
+
+    100% {
+        transform: rotate(90deg);
+
+    }
+
+
+}
+
+@keyframes darken {
+    100% {
+        background-color: #DDDADA;
+    }
+}
+
+@keyframes brighten {
+    100% {
+        background-color: #F4F4F4;
+    }
+}
+
+@keyframes shadow {
+    20% {
+        clip-path: polygon(100% 20%, 3% 0, 50% 0);
+    }
+
+    80% {
+        clip-path: polygon(0% 40%, 3% 0, 50% 0);
+    }
+
+    100% {
+        clip-path: polygon(0% 20%, 3% 0, 50% 0);
+    }
+}

@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper/modules';
 import { Day1 } from "../components/day1"
 import { Day2 } from "../components/day2";
+import { Day3 } from '../components/day3';
 
 export const Home = () => {
     return <section className="home">
@@ -18,6 +19,7 @@ export const Home = () => {
         >
             <SwiperSlide><Day1 /></SwiperSlide>
             <SwiperSlide><Day2 /></SwiperSlide>
+            <SwiperSlide><Day3 /></SwiperSlide>
         </Swiper>
     </section>
 }

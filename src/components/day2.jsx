@@ -22,7 +22,7 @@ export const Day2 = () => {
 
     return <div className="frame">
         <div className="center">
-            <div className="day2">
+            <div className="day day2">
                 <div id="day2" className="day2-lines" onClick={activate}>
                     <div className="day2-line"></div>
                     <div className="day2-line"></div>
