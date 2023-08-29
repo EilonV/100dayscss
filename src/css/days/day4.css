@@ -34,9 +34,9 @@
 }
 
 .day4-small {
-    /* height: 30px; */
+    height: 30px;
     width: 30px;
-    /* animation: resize 5s infinite cubic-bezier(0.2, 1, 0.7, 1); */
+    animation: resize3 5s infinite cubic-bezier(0.2, 1, 0.7, 1);
 }
 
 @keyframes resize {
@@ -44,7 +44,15 @@
         transform: scale(0);
     }
 
+    20% {
+        transform: scale(1);
+    }
+
     50% {
+        transform: scale(1);
+    }
+
+    60% {
         transform: scale(1);
     }
 
@@ -54,18 +62,49 @@
 }
 
 @keyframes resize2 {
+    0% {
+        transform: scale(0);
+    }
+
+    5% {
+        transform: scale(0);
+    }
+
+    30% {
+        transform: scale(1);
+    }
+
+    55% {
+        transform: scale(1);
+    }
+
+    70% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes resize3 {
+    0% {
+        transform: scale(0);
+    }
+
     20% {
         transform: scale(0);
     }
 
-    60% {
+    40% {
         transform: scale(1);
     }
 
-    90% {
+    60% {
         transform: scale(0);
     }
-    100%{
+
+    100% {
         transform: scale(0);
     }
 }
