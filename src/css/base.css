@@ -1,11 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
 
-html {
-    font-family: monospace;
-    font-size: 20px;
-    font-family: 700;
-}
-
 .day {
     height: 400px;
     width: 400px;
@@ -38,4 +32,12 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 460px) {
+
+    /* For desktop: */
+    .frame {
+        transform: scale(0.7);
+    }
 }

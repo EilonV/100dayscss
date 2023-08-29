@@ -1,0 +1,36 @@
+.about {
+    color: $light-black;
+
+    h1 {
+        font-size: 5em;
+
+        span {
+            filter: sepia(0%);
+            background: linear-gradient(29deg, rgba(0, 119, 255, 1) 0%, rgba(219, 177, 255, 1) 48%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    h2 {
+        font-size: 2em;
+        font-weight: normal;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    .why {
+        background: linear-gradient(135deg, rgb(165, 207, 255) 0%, rgb(235, 213, 255) 48%);
+        font-weight: 700;
+        padding: 10px;
+        border-radius: 14px;
+    }
+
+    a {
+        color: $blue;
+        text-decoration: underline;
+    }
+}

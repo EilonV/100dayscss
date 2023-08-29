@@ -1,0 +1,71 @@
+.day4 {
+    background-color: #E56262;
+}
+
+.day4-circles {
+    height: 100px;
+    width: 100px;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.day4-big,
+.day4-mid,
+.day4-small {
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.352);
+}
+
+.day4-big {
+    height: 90px;
+    width: 90px;
+    animation: resize 5s infinite cubic-bezier(0.8, 1, 0.2, 1);
+
+}
+
+.day4-mid {
+    height: 60px;
+    width: 60px;
+    animation: resize2 5s infinite cubic-bezier(0.8, 1, 0.2, 1);
+}
+
+.day4-small {
+    /* height: 30px; */
+    width: 30px;
+    /* animation: resize 5s infinite cubic-bezier(0.2, 1, 0.7, 1); */
+}
+
+@keyframes resize {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes resize2 {
+    20% {
+        transform: scale(0);
+    }
+
+    60% {
+        transform: scale(1);
+    }
+
+    90% {
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(0);
+    }
+}

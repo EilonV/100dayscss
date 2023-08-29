@@ -1,0 +1,29 @@
+.gallery {
+    display: grid;
+    width: fit-content;
+    margin: 30px auto;
+
+    @include for-mobile-layout {
+        grid-template-columns: 1fr;
+        // transform: scale(0.5);
+    }
+
+    @include for-desktop-layout {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include for-wider-layout {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .piece {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        justify-self: center;
+
+        @include for-mobile-layout {
+            width: 100%;
+        }
+    }
+}
